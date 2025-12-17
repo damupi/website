@@ -1,0 +1,54 @@
+@font-face {  
+  font-family: 'Damupi';
+  src: url('/fonts/damupi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.flip-card[data-company="gambling.com"] .flip-card-front {
+  background-image: url('/img/gamblingdotcom3.jpeg');
+}
+
+.flip-card[data-company="autoscout24"] .flip-card-front {
+  background-image: url('/img/autoscout24_2.png');
+}
+
+.flip-card[data-company="mytheresa"] .flip-card-front {
+  background-image: url('/img/mytheresa.jpg');
+}
+
+.flip-card[data-company="catenamedia"] .flip-card-front {
+  background-image: url('/img/catenamedia.jpg');
+}
+
+.flip-card[data-company="havas"] .flip-card-front {
+  background-image: url('/img/havas.jpg');
+}
+
+.flip-card[data-company="turespana"] .flip-card-front {
+  background-image: url('/img/turespana.jpg');
+}
+
+[data-company="gambling.com"]::before {
+  background-image: url('/img/gamblingdotcom3.jpeg');
+}
+
+[data-company="autoscout24"]::before {
+  background-image: url('/img/autoscout24_2.png');
+}
+
+[data-company="mytheresa"]::before {
+  background-image: url('/img/mytheresa.jpg');
+}
+
+[data-company="catenamedia"]::before {
+  background-image: url('/img/catenamedia.jpg');
+}
+
+[data-company="havas"]::before {
+  background-image: url('/img/havas.jpg');
+}
+
+[data-company="turespana"]::before {
+  background-image: url('/img/turespana.jpg');
+}
