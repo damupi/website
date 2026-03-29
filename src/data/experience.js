@@ -1,0 +1,51 @@
+export const experience = [
+  {
+    id: 'gambling',
+    name: 'Gambling.com Group',
+    logo: '/img/gamblingdotcom_new.jpg',
+    url: 'https://www.gambling.com/corporate',
+    description: 'Analytics Engineer. GA4 architecture, GTM server-side, MCP tooling, BigQuery data modeling across multiple web assets.',
+  },
+  {
+    id: 'autoscout24',
+    name: 'AutoScout24',
+    logo: '/img/autoscout24_new.png',
+    url: 'https://www.autoscout24.com/company',
+    description: 'Managed and developed digital tracking systems, ensuring quality and compliance at scale.',
+  },
+  {
+    id: 'mytheresa',
+    name: 'Mytheresa',
+    logo: '/img/mytheresa_new.jpg',
+    url: 'https://www.mytheresa.com',
+    description: 'Ad-Tech Analyst. Optimized tracking and data feeds, enhanced quality and processes.',
+  },
+  {
+    id: 'smava',
+    name: 'smava',
+    logo: '/img/smava.svg',
+    url: 'https://www.smava.de',
+    description: 'Digital analytics implementation and reporting.',
+  },
+  {
+    id: 'catena',
+    name: 'Catena Media',
+    logo: '/img/catenamedia_new.png',
+    url: 'https://www.catenamedia.com/about-us/',
+    description: 'Analyzed trends, delivered insights, tracked performance and improved dashboards.',
+  },
+  {
+    id: 'havas',
+    name: 'Havas',
+    logo: '/img/havas_new.png',
+    url: 'https://havasmedianetwork.com/',
+    description: 'GTM implementation, GA 360, Adobe tools, dashboards for better data visualization.',
+  },
+  {
+    id: 'turespana',
+    name: 'Turespaña',
+    logo: '/img/turespana.jpg',
+    url: 'https://www.tourspain.es',
+    description: 'Automated dashboards with GA API, GTM management, Yandex Metrica and Hotjar.',
+  },
+]
