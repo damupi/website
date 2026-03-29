@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 
 const CONTACT_LINKS = [
   {
-    label: 'Email',
-    href: 'mailto:damupi@damupi.com',
-    text: 'damupi@damupi.com',
+    label: 'Twitter',
+    href: 'https://x.com/damupi/',
+    text: 'X / Twitter',
   },
   {
     label: 'Telegram',
@@ -14,7 +14,7 @@ const CONTACT_LINKS = [
   {
     label: 'GitHub',
     href: 'https://github.com/damupi',
-    text: 'github.com/damupi',
+    text: 'GitHub',
   },
   {
     label: 'Nostr',
