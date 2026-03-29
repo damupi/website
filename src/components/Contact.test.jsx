@@ -27,11 +27,11 @@ describe('Contact', () => {
     )
   })
 
-  it('renders email contact link', () => {
+  it('renders Twitter contact link', () => {
     render(<Contact />)
-    expect(screen.getByRole('link', { name: /email/i })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: /twitter/i })).toHaveAttribute(
       'href',
-      'mailto:damupi@damupi.com'
+      'https://x.com/damupi/'
     )
   })
 
