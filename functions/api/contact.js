@@ -27,7 +27,8 @@ export async function onRequestPost(context) {
     })
 
     if (!res.ok) {
-      return new Response(JSON.stringify({ ok: false, error: 'Failed to send message.' }), {
+      const resendError = await res.text()
+      return new Response(JSON.stringify({ ok: false, error: resendError, status: res.status }), {
         status: 500,
         headers: { 'Content-Type': 'application/json' },
       })
