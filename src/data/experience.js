@@ -2,14 +2,14 @@ export const experience = [
   {
     id: 'gambling',
     name: 'Gambling.com Group',
-    logo: '/img/gamblingdotcom.png',
+    logo: '/img/gamblingdotcom_new.jpg',
     url: 'https://www.gambling.com/corporate',
     description: 'Analytics Engineer. GA4 architecture, GTM server-side, MCP tooling, BigQuery data modeling across multiple web assets.',
   },
   {
     id: 'autoscout24',
     name: 'AutoScout24',
-    logo: '/img/autoscout24_2.png',
+    logo: '/img/autoscout24_new.png',
     url: 'https://www.autoscout24.com/company',
     description: 'Managed and developed digital tracking systems, ensuring quality and compliance at scale.',
   },
