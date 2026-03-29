@@ -1,14 +1,3 @@
-import { EmailMessage } from 'cloudflare:email'
-
-/**
- * POST /api/contact
- * Receives contact form submissions and delivers them to hola@damupi.com
- * via Cloudflare Email Routing send_email binding.
- *
- * Required binding in CF Pages dashboard:
- *   Variable name : EMAIL
- *   Destination   : hola@damupi.com
- */
 export async function onRequestPost(context) {
   try {
     const data = await context.request.formData()
@@ -23,22 +12,26 @@ export async function onRequestPost(context) {
       })
     }
 
-    const raw = [
-      `From: damupi.com <hola@damupi.com>`,
-      `To: hola@damupi.com`,
-      `Subject: New message from ${name}`,
-      `MIME-Version: 1.0`,
-      `Content-Type: text/plain; charset=utf-8`,
-      ``,
-      `Name:    ${name}`,
-      `Email:   ${email}`,
-      ``,
-      message,
-    ].join('\r\n')
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${context.env.RESEND_API_KEY}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        from: 'damupi.com <onboarding@resend.dev>',
+        to: ['hola@damupi.com'],
+        subject: `New message from ${name}`,
+        text: `Name:  ${name}\nEmail: ${email}\n\n${message}`,
+      }),
+    })
 
-    await context.env.EMAIL.send(
-      new EmailMessage('hola@damupi.com', 'hola@damupi.com', raw)
-    )
+    if (!res.ok) {
+      return new Response(JSON.stringify({ ok: false, error: 'Failed to send message.' }), {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      })
+    }
 
     return new Response(JSON.stringify({ ok: true }), {
       headers: { 'Content-Type': 'application/json' },
