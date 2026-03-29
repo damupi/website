@@ -16,12 +16,18 @@ export default function Experience() {
               aria-label={company.name}
               className="card block hover:border-accent transition-colors group"
             >
-              {company.logo && (
+              {company.logo ? (
                 <img
                   src={company.logo}
                   alt={company.name}
                   className="h-8 object-contain mb-3 opacity-70 group-hover:opacity-100 transition-opacity"
                 />
+              ) : (
+                <div className="h-8 mb-3 flex items-center">
+                  <span className="text-xs uppercase tracking-widest text-dark-border border border-dark-border rounded px-2 py-0.5">
+                    {company.name}
+                  </span>
+                </div>
               )}
               <h3 className="font-bold text-sm text-dark-text mb-1 group-hover:text-accent transition-colors">
                 {company.name}
