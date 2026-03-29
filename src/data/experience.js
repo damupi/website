@@ -16,7 +16,7 @@ export const experience = [
   {
     id: 'mytheresa',
     name: 'Mytheresa',
-    logo: '/img/mytheresa.jpg',
+    logo: '/img/mytheresa_new.jpg',
     url: 'https://www.mytheresa.com',
     description: 'Ad-Tech Analyst. Optimized tracking and data feeds, enhanced quality and processes.',
   },
@@ -30,14 +30,14 @@ export const experience = [
   {
     id: 'catena',
     name: 'Catena Media',
-    logo: '/img/catenamedia.jpg',
+    logo: '/img/catenamedia_new.png',
     url: 'https://www.catenamedia.com/about-us/',
     description: 'Analyzed trends, delivered insights, tracked performance and improved dashboards.',
   },
   {
     id: 'havas',
     name: 'Havas',
-    logo: '/img/havas.jpg',
+    logo: '/img/havas_new.png',
     url: 'https://havasmedianetwork.com/',
     description: 'GTM implementation, GA 360, Adobe tools, dashboards for better data visualization.',
   },
