@@ -23,7 +23,7 @@ export const experience = [
   {
     id: 'smava',
     name: 'smava',
-    logo: null,
+    logo: '/img/smava.svg',
     url: 'https://www.smava.de',
     description: 'Digital analytics implementation and reporting.',
   },
