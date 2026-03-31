@@ -3,7 +3,7 @@ export const whatIBuild = [
     id: 'mcp',
     title: 'MCP Servers',
     description:
-      'Connecting analytics platforms to AI assistants via Model Context Protocol. GA4, GSC, Snowflake, ad platforms — queryable in plain English.',
+      'Connecting analytics platforms to AI assistants via Model Context Protocol. GA4, GSC, Snowflake, ad platforms (Snacpchat, Meta, Google Ads, ...) — queryable in plain English.',
   },
   {
     id: 'cli',
