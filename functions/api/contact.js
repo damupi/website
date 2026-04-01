@@ -19,7 +19,7 @@ export async function onRequestPost(context) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'damupi.com <onboarding@resend.dev>',
+        from: 'damupi.com <noreply@damupi.com>',
         to: ['hola@damupi.com'],
         subject: `New message from ${name}`,
         text: `Name:  ${name}\nEmail: ${email}\n\n${message}`,
@@ -27,6 +27,8 @@ export async function onRequestPost(context) {
     })
 
     if (!res.ok) {
+      const resendError = await res.text()
+      console.error('Resend error', res.status, resendError)
       return new Response(JSON.stringify({ ok: false, error: 'Failed to send message.' }), {
         status: 500,
         headers: { 'Content-Type': 'application/json' },
