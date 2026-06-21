@@ -65,14 +65,14 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-16 border-t border-dark-border">
+    <section id="contact" className="py-16 border-t border-light-border dark:border-dark-border">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <h2 className="section-heading">say hello</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact links */}
           <div>
-            <p className="text-dark-muted text-sm mb-6 leading-relaxed">
+            <p className="text-light-muted dark:text-dark-muted text-sm mb-6 leading-relaxed">
               If something I've built looks interesting, or you just want to talk
               analytics and AI — reach out.
             </p>
@@ -84,7 +84,7 @@ export default function Contact() {
                     target={href.startsWith('mailto') ? undefined : '_blank'}
                     rel="noopener noreferrer"
                     aria-label={label}
-                    className="text-sm text-dark-muted hover:text-accent transition-colors"
+                    className="text-sm text-light-muted dark:text-dark-muted hover:text-accent transition-colors"
                   >
                     <span className="text-accent mr-2">→</span>
                     {text}
@@ -97,7 +97,7 @@ export default function Contact() {
           {/* Form */}
           <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-4">
             <div>
-              <label htmlFor="name" className="block text-xs uppercase tracking-wide text-dark-muted mb-1">
+              <label htmlFor="name" className="block text-xs uppercase tracking-wide text-light-muted dark:text-dark-muted mb-1">
                 Name
               </label>
               <input
@@ -106,11 +106,11 @@ export default function Contact() {
                 type="text"
                 value={form.name}
                 onChange={handleChange}
-                className="w-full bg-dark-surface border border-dark-border rounded px-3 py-2 text-sm text-dark-text focus:outline-none focus:border-accent transition-colors"
+                className="w-full bg-light-surface dark:bg-dark-surface border border-light-border dark:border-dark-border rounded px-3 py-2 text-sm text-light-text dark:text-dark-text focus:outline-none focus:border-accent transition-colors"
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-xs uppercase tracking-wide text-dark-muted mb-1">
+              <label htmlFor="email" className="block text-xs uppercase tracking-wide text-light-muted dark:text-dark-muted mb-1">
                 Email
               </label>
               <input
@@ -119,11 +119,11 @@ export default function Contact() {
                 type="email"
                 value={form.email}
                 onChange={handleChange}
-                className="w-full bg-dark-surface border border-dark-border rounded px-3 py-2 text-sm text-dark-text focus:outline-none focus:border-accent transition-colors"
+                className="w-full bg-light-surface dark:bg-dark-surface border border-light-border dark:border-dark-border rounded px-3 py-2 text-sm text-light-text dark:text-dark-text focus:outline-none focus:border-accent transition-colors"
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-xs uppercase tracking-wide text-dark-muted mb-1">
+              <label htmlFor="message" className="block text-xs uppercase tracking-wide text-light-muted dark:text-dark-muted mb-1">
                 Message
               </label>
               <textarea
@@ -132,7 +132,7 @@ export default function Contact() {
                 rows={5}
                 value={form.message}
                 onChange={handleChange}
-                className="w-full bg-dark-surface border border-dark-border rounded px-3 py-2 text-sm text-dark-text focus:outline-none focus:border-accent transition-colors resize-none"
+                className="w-full bg-light-surface dark:bg-dark-surface border border-light-border dark:border-dark-border rounded px-3 py-2 text-sm text-light-text dark:text-dark-text focus:outline-none focus:border-accent transition-colors resize-none"
               />
             </div>
 
