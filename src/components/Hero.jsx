@@ -34,9 +34,14 @@ export default function Hero() {
         </div>
 
         <div className="shrink-0">
+          {/*
+            Profile photo: drop your avatar file into public/ as "avatar.jpeg"
+            (or update the src below to match your filename).
+            Current file: /public/avatar.jpeg
+          */}
           <img
             src="/avatar.jpeg"
-            alt="damupi avatar"
+            alt="David Pino — Analytics Engineer and MCP Developer"
             className="w-32 h-32 md:w-44 md:h-44 rounded-full object-cover border-2 border-accent"
           />
         </div>

@@ -11,7 +11,7 @@ import Footer from './components/Footer'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-dark-bg text-dark-text font-mono dark:bg-dark-bg dark:text-dark-text">
+    <div className="min-h-screen font-mono">
       <Header />
       <main>
         <Hero />
