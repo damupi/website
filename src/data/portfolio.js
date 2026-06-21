@@ -6,21 +6,15 @@ export const portfolio = [
     url: 'https://github.com/damupi/mcp-ga4',
   },
   {
-    id: 'mcp-gsc-oauth',
-    title: 'mcp-gsc-oauth',
-    description: 'Google Search Console MCP server with OAuth authentication.',
-    url: 'https://github.com/damupi/mcp-gsc-oauth',
+    id: 'gafour',
+    title: 'gafour',
+    description: 'Comprehensive CLI for Google Analytics 4 — run reports, inspect metadata, check dimension/metric compatibility, and manage properties from the terminal.',
+    url: 'https://github.com/damupi/gafour',
   },
   {
     id: 'gtm-cli',
     title: 'gtm-cli',
-    description: 'Python CLI for Google Tag Manager API v2. Manage containers, workspaces and tags from the terminal.',
-    url: null,
-  },
-  {
-    id: 'gafour',
-    title: 'gafour',
-    description: 'GA4 reporting agent — AI-powered analytics reporting without manual dashboard work.',
-    url: null,
+    description: 'Python CLI for Google Tag Manager API v2. Manage containers, workspaces and tags from the terminal with OAuth2 and service account support.',
+    url: 'https://github.com/damupi/gtm-cli',
   },
 ]
