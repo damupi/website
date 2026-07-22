@@ -4,7 +4,7 @@ const NAV_LINKS = [
   { label: 'stack', href: '#stack' },
   { label: 'what i build', href: '#what-i-build' },
   { label: 'work', href: '#experience' },
-  { label: 'writing', href: '#writing' },
+  { label: 'blog', href: 'https://blog.damupi.com', external: true },
   { label: 'contact', href: '#contact' },
 ]
 
@@ -45,10 +45,12 @@ export default function Header() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6 text-sm" aria-label="Main navigation">
-          {NAV_LINKS.map(({ label, href }) => (
+          {NAV_LINKS.map(({ label, href, external }) => (
             <a
               key={href}
               href={href}
+              target={external ? '_blank' : undefined}
+              rel={external ? 'noopener noreferrer' : undefined}
               className="text-dark-muted hover:text-accent transition-colors"
             >
               {label}
@@ -97,10 +99,12 @@ export default function Header() {
       {/* Mobile menu */}
       {menuOpen && (
         <nav className="md:hidden border-t border-dark-border bg-dark-bg px-4 py-4 flex flex-col gap-4 text-sm" aria-label="Mobile navigation">
-          {NAV_LINKS.map(({ label, href }) => (
+          {NAV_LINKS.map(({ label, href, external }) => (
             <a
               key={href}
               href={href}
+              target={external ? '_blank' : undefined}
+              rel={external ? 'noopener noreferrer' : undefined}
               className="text-dark-muted hover:text-accent transition-colors"
               onClick={() => setMenuOpen(false)}
             >

@@ -13,7 +13,7 @@ describe('Header', () => {
     expect(screen.getByRole('link', { name: /stack/i })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /what i build/i })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /work/i })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /writing/i })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: /blog/i })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /contact/i })).toBeInTheDocument()
   })
 

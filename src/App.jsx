@@ -5,7 +5,6 @@ import Stack from './components/Stack'
 import WhatIBuild from './components/WhatIBuild'
 import Portfolio from './components/Portfolio'
 import Experience from './components/Experience'
-import Writing from './components/Writing'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -19,7 +18,6 @@ export default function App() {
         <WhatIBuild />
         <Portfolio />
         <Experience />
-        <Writing />
         <Contact />
       </main>
       <Footer />
