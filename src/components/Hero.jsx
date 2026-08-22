@@ -13,7 +13,7 @@ export default function Hero() {
             AI Engineer<br />
             <span className="text-accent">&amp; Automation Builder</span>
           </h1>
-          <p className="text-dark-muted text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
+          <p className="text-light-muted dark:text-dark-muted text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
             10+ years in analytics and data engineering, now building AI agents,
             tool-calling systems and production LLM workflows — automation that
             goes well beyond a dashboard.
@@ -21,13 +21,13 @@ export default function Hero() {
           <div className="flex flex-wrap gap-4">
             <a
               href="#portfolio"
-              className="px-5 py-2 bg-accent text-white rounded hover:bg-opacity-90 transition-opacity text-sm font-bold"
+              className="px-5 py-2 bg-accent text-white rounded hover:bg-opacity-90 hover:shadow-lg hover:shadow-black/30 dark:hover:shadow-white/20 transition-shadow duration-200 text-sm font-bold"
             >
               see my work
             </a>
             <a
               href="#contact"
-              className="px-5 py-2 border border-dark-border text-dark-muted rounded hover:border-accent hover:text-accent transition-colors text-sm"
+              className="px-5 py-2 border border-light-border dark:border-dark-border text-light-muted dark:text-dark-muted rounded hover:border-accent hover:text-accent hover:shadow-lg hover:shadow-black/30 dark:hover:shadow-white/20 transition-shadow duration-200 text-sm"
             >
               say hello
             </a>
