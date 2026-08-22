@@ -22,10 +22,33 @@
   }
 
   .card {
-    @apply rounded-lg border border-dark-border bg-dark-surface p-6;
+    @apply rounded-lg border border-dark-border bg-dark-surface p-6 transition-all duration-200;
+  }
+
+  .card:hover {
+    @apply border-accent -translate-y-1;
   }
 
   html.light .card {
     @apply border-light-border bg-light-surface;
+  }
+
+  .nav-link {
+    @apply relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 0%;
+    background-color: theme('colors.accent');
+    transition: width 150ms ease;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
   }
 }
