@@ -10,7 +10,7 @@ export default function Stack() {
           {stack.map(item => (
             <span
               key={item}
-              className="px-3 py-1 text-sm border border-light-border dark:border-dark-border rounded text-light-muted dark:text-dark-muted hover:border-light-muted dark:hover:border-dark-muted hover:text-accent hover:font-bold transition-colors"
+              className="px-3 py-1 text-base border border-light-border dark:border-dark-border rounded text-light-muted dark:text-dark-muted hover:border-light-muted dark:hover:border-dark-muted hover:text-accent dark:hover:text-accent-dark hover:font-bold transition-colors"
             >
               {item}
             </span>

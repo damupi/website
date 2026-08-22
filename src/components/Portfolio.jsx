@@ -5,18 +5,18 @@ function ProjectCard({ title, description, url }) {
   return (
     <div className="card flex flex-col gap-3">
       <div>
-        <h3 className="font-bold text-sm text-light-text dark:text-dark-text mb-1">
+        <h3 className="font-bold text-base text-light-text dark:text-dark-text mb-1">
           <a
             href={url}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={title}
-            className="underline underline-offset-4 decoration-light-text dark:decoration-dark-text hover:decoration-accent hover:text-accent transition-colors"
+            className="underline underline-offset-4 decoration-light-text dark:decoration-dark-text hover:decoration-accent dark:hover:decoration-accent-dark hover:text-accent dark:hover:text-accent-dark transition-colors"
           >
             {title}
           </a>
         </h3>
-        <p className="text-light-muted dark:text-dark-muted text-sm leading-relaxed">{description}</p>
+        <p className="text-light-muted dark:text-dark-muted text-base leading-relaxed">{description}</p>
       </div>
     </div>
   )
@@ -44,7 +44,7 @@ export default function Portfolio() {
           href="https://github.com/damupi"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm text-light-muted dark:text-dark-muted hover:text-accent transition-colors"
+          className="text-base text-light-muted dark:text-dark-muted hover:text-accent dark:hover:text-accent-dark transition-colors"
         >
           github.com/damupi →
         </a>

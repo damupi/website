@@ -9,10 +9,10 @@ export default function WhatIBuild() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {whatIBuild.map(item => (
             <div key={item.id} className="card">
-              <h3 className="text-accent font-bold mb-2 text-sm uppercase tracking-wide">
+              <h3 className="text-accent dark:text-accent-dark font-bold mb-2 text-base uppercase tracking-wide">
                 {item.title}
               </h3>
-              <p className="text-light-muted dark:text-dark-muted text-sm leading-relaxed">
+              <p className="text-light-muted dark:text-dark-muted text-base leading-relaxed">
                 {item.description}
               </p>
             </div>

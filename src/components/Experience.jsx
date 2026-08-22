@@ -29,10 +29,10 @@ export default function Experience() {
                   </span>
                 </div>
               )}
-              <h3 className="font-bold text-sm text-light-text dark:text-dark-text mb-1 group-hover:text-accent transition-colors">
+              <h3 className="font-bold text-base text-light-text dark:text-dark-text mb-1 group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">
                 {company.name}
               </h3>
-              <p className="text-light-muted dark:text-dark-muted text-xs leading-relaxed">
+              <p className="text-light-muted dark:text-dark-muted text-sm leading-relaxed">
                 {company.description}
               </p>
             </a>
