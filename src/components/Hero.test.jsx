@@ -5,8 +5,8 @@ describe('Hero', () => {
   it('renders the main headline', () => {
     render(<Hero />)
     const h1 = screen.getByRole('heading', { level: 1 })
-    expect(h1).toHaveTextContent(/Analytics Engineer/i)
-    expect(h1).toHaveTextContent(/MCP Developer/i)
+    expect(h1).toHaveTextContent(/AI Engineer/i)
+    expect(h1).toHaveTextContent(/Automation Builder/i)
   })
 
   it('renders the one-liner description', () => {
@@ -28,6 +28,6 @@ describe('Hero', () => {
 
   it('renders avatar image', () => {
     render(<Hero />)
-    expect(screen.getByAltText(/damupi avatar/i)).toBeInTheDocument()
+    expect(screen.getByAltText(/AI Engineer/i)).toBeInTheDocument()
   })
 })

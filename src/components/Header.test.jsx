@@ -19,13 +19,13 @@ describe('Header', () => {
 
   it('renders the theme toggle button', () => {
     render(<Header />)
-    expect(screen.getByRole('button', { name: /toggle theme/i })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /switch to (light|dark) mode/i })).toBeInTheDocument()
   })
 
   it('toggles dark/light class on html element', () => {
     document.documentElement.className = 'dark'
     render(<Header />)
-    const btn = screen.getByRole('button', { name: /toggle theme/i })
+    const btn = screen.getByRole('button', { name: /switch to (light|dark) mode/i })
     fireEvent.click(btn)
     expect(document.documentElement.classList.contains('light')).toBe(true)
     fireEvent.click(btn)
