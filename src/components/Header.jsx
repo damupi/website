@@ -44,14 +44,14 @@ export default function Header() {
         <Logo />
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-6 text-sm" aria-label="Main navigation">
+        <nav className="hidden md:flex items-center gap-6 text-base" aria-label="Main navigation">
           {NAV_LINKS.map(({ label, href, external }) => (
             <a
               key={href}
               href={href}
               target={external ? '_blank' : undefined}
               rel={external ? 'noopener noreferrer' : undefined}
-              className="nav-link text-light-muted dark:text-dark-muted hover:text-accent transition-colors"
+              className="nav-link text-light-muted dark:text-dark-muted hover:text-accent dark:hover:text-accent-dark transition-colors"
             >
               {label}
             </a>
@@ -62,7 +62,7 @@ export default function Header() {
           <button
             onClick={toggleTheme}
             aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-            className="text-light-muted dark:text-dark-muted hover:text-accent transition-colors p-1.5 border border-light-border dark:border-dark-border rounded"
+            className="text-light-muted dark:text-dark-muted hover:text-accent dark:hover:text-accent-dark transition-colors p-1.5 border border-light-border dark:border-dark-border rounded"
           >
             {isDark ? (
               /* Sun icon — click to go light */
@@ -87,7 +87,7 @@ export default function Header() {
 
           {/* Mobile burger */}
           <button
-            className="md:hidden text-light-muted dark:text-dark-muted hover:text-accent"
+            className="md:hidden text-light-muted dark:text-dark-muted hover:text-accent dark:hover:text-accent-dark"
             aria-label="Toggle mobile menu"
             onClick={() => setMenuOpen(o => !o)}
           >
@@ -98,14 +98,14 @@ export default function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <nav className="md:hidden border-t border-light-border dark:border-dark-border bg-light-bg dark:bg-dark-bg px-4 py-4 flex flex-col gap-4 text-sm" aria-label="Mobile navigation">
+        <nav className="md:hidden border-t border-light-border dark:border-dark-border bg-light-bg dark:bg-dark-bg px-4 py-4 flex flex-col gap-4 text-base" aria-label="Mobile navigation">
           {NAV_LINKS.map(({ label, href, external }) => (
             <a
               key={href}
               href={href}
               target={external ? '_blank' : undefined}
               rel={external ? 'noopener noreferrer' : undefined}
-              className="text-light-muted dark:text-dark-muted hover:text-accent transition-colors"
+              className="text-light-muted dark:text-dark-muted hover:text-accent dark:hover:text-accent-dark transition-colors"
               onClick={() => setMenuOpen(false)}
             >
               {label}
