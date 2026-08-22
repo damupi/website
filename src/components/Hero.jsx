@@ -10,12 +10,13 @@ export default function Hero() {
         <div className="flex-1">
           <p className="text-accent text-sm mb-3 tracking-widest uppercase">damupi</p>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6">
-            Analytics Engineer<br />
-            <span className="text-accent">&amp; MCP Developer</span>
+            AI Engineer<br />
+            <span className="text-accent">&amp; Automation Builder</span>
           </h1>
           <p className="text-dark-muted text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
-            10+ years across GA4, GTM, BigQuery, Snowflake and Dataform.
-            I build MCP servers that let teams query analytics data in plain English.
+            10+ years in analytics and data engineering, now building AI agents,
+            tool-calling systems and production LLM workflows — automation that
+            goes well beyond a dashboard.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
@@ -41,7 +42,7 @@ export default function Hero() {
           */}
           <img
             src="/avatar.jpeg"
-            alt="David Pino — Analytics Engineer and MCP Developer"
+            alt="David Pino — AI Engineer"
             className="w-32 h-32 md:w-44 md:h-44 rounded-full object-cover border-2 border-accent"
           />
         </div>
