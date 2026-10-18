@@ -1,0 +1,14 @@
+{
+  "names": {
+    "damupi": "bdbbe6e91022af95a331eed15f0668ac4655eb7eb51c786897bdca08c70dd4aa",
+    "norovid": "f2146c36f8a755f6cd3fafa2fac8c191ee04ecaf38f515d1c6f40e0baf208325"
+  },
+  "relays": {
+    "bdbbe6e91022af95a331eed15f0668ac4655eb7eb51c786897bdca08c70dd4aa": [
+      "wss://nostr.damupi.com"
+    ],
+    "f2146c36f8a755f6cd3fafa2fac8c191ee04ecaf38f515d1c6f40e0baf208325": [
+      "wss://nostr.damupi.com"
+    ]
+  }
+}
