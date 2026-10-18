@@ -3,6 +3,7 @@
 // description hash still matches the metadata Coinos signs.
 export const WALLETS = {
   damupi: 'https://coinos.io/.well-known/lnurlp/damupi',
+  norovid: 'https://coinos.io/.well-known/lnurlp/norovid',
 }
 
 const HEADERS = {
